@@ -35,23 +35,7 @@ namespace Seminar6
 
         
         
-        // Console.Write("Введите значение b1: ");
-        // int b1 = Convert.ToInt32(Console.ReadLine());
-        
-        // Console.Write("Введите коэффициент k1: ");
-        // int k1 = Convert.ToInt32(Console.ReadLine());
-
-        // Console.Write("Введите значение b2: ");
-        // int b2 = Convert.ToInt32(Console.ReadLine());
-        
-        // Console.Write("Введите коэффициент k2: ");
-        // int k2 = Convert.ToInt32(Console.ReadLine());
- 
-        // double x = ((double)(b2 - b1) / (k1 - k2));
-        // double y = k1 * x + b1;        
-        
-        // Console.WriteLine($"({x};{y})");
-       
+            
         void PointOfIntersection()
         {
         Console.Write("Введите значение b1: ");
