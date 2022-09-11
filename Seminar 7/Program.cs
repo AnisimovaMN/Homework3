@@ -4,7 +4,7 @@ namespace Seminar7
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string [] args)
         {
 
     // Задача 47. Задайте двумерный массив размером m х n, заполненный случайными вещественными числами.
@@ -48,11 +48,11 @@ namespace Seminar7
             // 17 -> такого числа в массиве нет
 
            
-             Console.WriteLine("Введите количество строк массива: ");
-             int rows = Convert.ToInt32(Console.ReadLine());
+            //  Console.WriteLine("Введите количество строк массива: ");
+            //  int rows = Convert.ToInt32(Console.ReadLine());
 
-             Console.WriteLine("Введите количество столбцов массива: ");
-             int columns = Convert.ToInt32(Console.ReadLine());
+            //  Console.WriteLine("Введите количество столбцов массива: ");
+            //  int columns = Convert.ToInt32(Console.ReadLine());
             
             // Console.WriteLine("Введите позицию искомого элемента в строке: ");
             // int numberRow = Convert.ToInt32(Console.ReadLine());
@@ -60,9 +60,9 @@ namespace Seminar7
             // Console.WriteLine("Введите позицию искомого элемента в столбце: ");
             // int numberColumn = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine();
+            // Console.WriteLine();
             
-            int [,] matrix = new int [rows, columns];
+            // int [,] matrix = new int [rows, columns];
             
                      
             void GetArrayIntegerNumbers(int [,] matrix) 
@@ -106,6 +106,16 @@ namespace Seminar7
             // 8 4 2 4
             // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3
 
+            Console.WriteLine("Введите количество строк массива: ");
+             int rows = Convert.ToInt32(Console.ReadLine());
+
+             Console.WriteLine("Введите количество столбцов массива: ");
+             int columns = Convert.ToInt32(Console.ReadLine());
+
+             Console.WriteLine();
+
+             int [,] matrix = new int [rows, columns];
+            
             void MidlleArithmeticValueOfColumns()
             {            
                 double result = 0;
