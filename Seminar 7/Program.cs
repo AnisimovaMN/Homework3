@@ -106,7 +106,7 @@ namespace Seminar7
             // 8 4 2 4
             // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3
 
-            Console.WriteLine("Введите количество строк массива: ");
+             Console.WriteLine("Введите количество строк массива: ");
              int rows = Convert.ToInt32(Console.ReadLine());
 
              Console.WriteLine("Введите количество столбцов массива: ");
@@ -116,28 +116,27 @@ namespace Seminar7
 
              int [,] matrix = new int [rows, columns];
             
-            void MidlleArithmeticValueOfColumns()
+            void MiddleArithmeticValueOfColumns()
             {            
-                double result = 0;
-                double sum = 0;
                 Console.Write($"Среднее арифметическое каждого столбца:");
                 
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
+                    double sum = 0;
+
                 for (int i = 0; i < matrix.GetLength(0); i++)
                 {
                     sum += matrix[i,j];                  
                 }
-                    result = sum / rows;
+                    double result = sum / rows;
                     Console.Write($" {result};");
-                    result = 0;
-                    sum = 0;
+                    
                 }
                 Console.WriteLine();                
             }
                 
                 GetArrayIntegerNumbers(matrix);
-                MidlleArithmeticValueOfColumns();
+                MiddleArithmeticValueOfColumns();
         }
     }
 }
