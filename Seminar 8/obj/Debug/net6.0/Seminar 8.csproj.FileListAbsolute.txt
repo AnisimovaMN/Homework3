@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\bin\Debug\net6.0\Seminar 8.exe
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\bin\Debug\net6.0\Seminar 8.deps.json
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\bin\Debug\net6.0\Seminar 8.runtimeconfig.json
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\bin\Debug\net6.0\Seminar 8.dll
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\bin\Debug\net6.0\Seminar 8.pdb
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.AssemblyInfo.cs
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.dll
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\refint\Seminar 8.dll
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.pdb
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\Seminar 8.genruntimeconfig.cache
+C:\Users\Admin\Desktop\GigBrains\Homework3\Seminar 8\obj\Debug\net6.0\ref\Seminar 8.dll
