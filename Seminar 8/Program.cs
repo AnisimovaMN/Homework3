@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Seminar7
+namespace Seminar8
 {
     class Program
     {
@@ -216,69 +216,119 @@ namespace Seminar7
         // 27(0,0,1) 90(0,1,1)
         // 26(1,0,1) 55(1,1,1)
 
-            int arraySizeX = 2;
-            int arraySizeY = 2;
-            int arraySizeZ = 2;
-            int minNumber = 10;
-            int maxNumber = 99;
-            int [,,]Array = new int [arraySizeX, arraySizeY, arraySizeZ];
-            Console.Clear();
+            // int arraySizeX = 2;
+            // int arraySizeY = 2;
+            // int arraySizeZ = 2;
+            // int minNumber = 10;
+            // int maxNumber = 99;
+            // int [,,] Array = new int [arraySizeX, arraySizeY, arraySizeZ];
+            // Console.Clear();
 
-            FillArrayRandomNumber(Array, minNumber, maxNumber);
-            PrintArrayWithIndex(Array);
+            // FillArrayRandomNumber(Array, minNumber, maxNumber);
+            // PrintArrayWithIndex(Array);
 
-            void FillArrayRandomNumber(int [,,] Array, int minNumber, int maxNumber)
+            // void FillArrayRandomNumber(int [,,] Array, int minNumber, int maxNumber)
+            // {
+            //     Random rand = new Random();
+            //     for (int i = 0; i < Array.GetLength(0); i++)
+            //      {
+            //          for (int j = 0; j < Array.GetLength(1); j++)
+            //          {
+            //             for (int k = 0; k < Array.GetLength(2); k++)
+            //             {
+            //                 while (Array[i,j,k] == 0)
+            //                 {
+            //                     int number = rand.Next(minNumber, maxNumber + 1);
+            //                     if(IsNumberInArray(Array, number) == false)
+            //                     {
+            //                         Array[i,j,k] = number;
+            //                     }
+            //                 }
+            //             }
+            //          }
+            //      }
+            // }
+
+            // bool IsNumberInArray(int [,,] Array, int number)
+            // {
+            //     for (int i = 0; i < Array.GetLength(0); i++)
+            //     {
+            //          for (int j = 0; j < Array.GetLength(1); j++)
+            //         {
+            //             for (int k = 0; k < Array.GetLength(2); k++)
+            //             {
+            //                 if(Array[i,j,k] == number) return true;
+            //             }
+            //         }
+            //     }
+            //     return false;
+            // }
+
+            // void PrintArrayWithIndex(int [,,] Array)
+            // {
+            // for (int i = 0; i < Array.GetLength(0); i++)
+            // {
+            //     for (int j = 0; j < Array.GetLength(1); j++)
+            //     {
+            //         for (int k = 0; k < Array.GetLength(2); k++)
+            //         {
+            //             Console.Write(Array[i,j,k]);
+            //             Console.Write("({0},{1},{2})\t", i,j,k);
+            //         }
+            //         Console.WriteLine();
+            //     }
+            // }
+            // }
+
+            //Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+            // Например, на выходе получается вот такой массив:
+            // 01 02 03 04
+            // 12 13 14 05
+            // 11 16 15 06
+            // 10 09 08 07
+
+        void SpiralMatrix()
+        {
+            Console.WriteLine("Введите размерность матрицы: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[,] matrix = new int[n,n];
+ 
+            Console.WriteLine();
+ 
+            int row = 0;
+            int column = 0;
+            int dx = 1;
+            int dy = 0;
+            int dirChanges = 0;
+            int count = n;
+ 
+            for (int i = 0; i < matrix.Length; i++)
             {
-                Random rand = new Random();
-                for (int i = 0; i < Array.GetLength(0); i++)
-                 {
-                     for (int j = 0; j < Array.GetLength(1); j++)
-                     {
-                        for (int k = 0; k < Array.GetLength(2); k++)
-                        {
-                            while (Array[i,j,k] == 0)
-                            {
-                                int number = rand.Next(minNumber, maxNumber + 1);
-                                if(IsNumberInArray(Array, number) == false)
-                                {
-                                    Array[i,j,k] = number;
-                                }
-                            }
-                        }
-                     }
-                 }
-            }
-
-            bool IsNumberInArray(int [,,] Array, int number)
-            {
-                for (int i = 0; i < Array.GetLength(0); i++)
+                matrix[row, column] = i + 1;
+                if (--count == 0)
                 {
-                     for (int j = 0; j < Array.GetLength(1); j++)
-                    {
-                        for (int k = 0; k < Array.GetLength(2); k++)
-                        {
-                            if(Array[i,j,k] == number) return true;
-                        }
-                    }
+                count = n * (dirChanges % 2) + n * ((dirChanges + 1) % 2) - (dirChanges / 2 - 1) - 2;
+                int temp = dx;
+                dx = -dy;
+                dy = temp;
+                dirChanges++;
                 }
-                return false;
+                column += dx;
+                row += dy;
             }
+           
+            for (int ii = 0; ii < n; ii++)
+            {
+                for (int jj = 0; jj < n; jj++)
+                {    
+                Console.Write("{0,5:D2}", matrix[ii,jj]);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+        SpiralMatrix();
 
-            void PrintArrayWithIndex(int [,,] Array)
-            {
-            for (int i = 0; i < Array.GetLength(0); i++)
-            {
-                for (int j = 0; j < Array.GetLength(1); j++)
-                {
-                    for (int k = 0; k < Array.GetLength(2); k++)
-                    {
-                        Console.Write(Array[i,j,k]);
-                        Console.Write("({0},{1},{2})\t", i,j,k);
-                    }
-                    Console.WriteLine();
-                }
-            }
-            }
         }
     }
 }
